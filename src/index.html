@@ -2,22 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet"
+          href="../dist/output.css">
     <title>Sisyphus</title>
 </head>
-<body>
-<div class="container mx-3 p-9">
-    <div class="flex">
-        <div class="flex-none w-64 h-14">
-            01
+<body class="bg-darkblue text-white mx-32 my-12">
+    <nav class="flex flex-row flex-1 text-center justify-between w-full mb-12">
+        <div class="flex flex-row w-auto text-center items-center w-1/2"><img src="assets/logomark.svg"
+                                                                        alt="logo of Sisyphus"
+                                                                        class="mr-4"><span class="text-2xl font-medium">Sisyphus</span></div>
+        <ul class="flex flex-row w-auto text-center items-center w-1/4 mr-12">
+            <li class="mx-4"><a href="#">About</a></li>
+            <li class="mx-4"><a href="#">Services</a></li>
+            <li class="mx-4"><a href="#">Product</a></li>
+        </ul>
+        <button class="w-auto rounded bg-red px-12 text-white w-auto">Demo</button>
+    </nav>
+    <div class="flex flex-row">
+        <div class="flex flex-col space-y-12 text-left w-3/5">
+            <span class="text-6xl text-white font-semibold">Manage<br>your personal<br>and all team task.</span> <span class="text-grey text-2xl font-extralight">Monitoring your personal and all team task<br>more easily with us.</span>
+            <div class="flex flex-row">
+                <label for="sendingButton"></label> <input type="text"
+                                                           id="sendingButton"
+                                                           class="rounded-md w-48 bg-darkblue border-grey"
+                                                           placeholder="Email">
+                <button class="w-auto rounded bg-red px-4 py-2 text-white">Send</button>
+            </div>
         </div>
-        <div class="flex-initial w-14">
-            02
-        </div>
-        <div class="flex-initial w-32">
-            03
-        </div>
+        <img src="assets/base-image.svg"
+             alt="Image of a woman holding a notebook siting on a chair with some puzzle background and a check mark in the middle"
+            class="w-2/5">
     </div>
-</div>
+    <footer class="italic text-grey">@Createdbynamedesign</footer>
 </body>
 </html>
